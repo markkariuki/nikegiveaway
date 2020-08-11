@@ -1,0 +1,66 @@
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="styles.css">
+
+ <nav class="nav">
+
+            <div class="logo">
+                <a style href="#"><img src="nike.png" alt=""></a>
+            </div>
+
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+
+    </nav>
+
+
+<div class="container">
+
+  <div class="copy">
+    <h1>Spin to Win!</h1>
+  </div>
+
+  <div class="wrapper">
+    <div class="pointer-wrapper">
+      <img style="margin-left:279px;" src="https://register.flybuys.com.au/cdn/edm/library/assets/2017_07/wheel-pointer-v2.png" alt="pointer">
+    </div>
+    <img src="https://register.flybuys.com.au/cdn/edm/library/assets/2017_07/spin-wheel-v2.png" alt="spping wheel" class="wheel">
+  </div>
+
+  <div class="button">
+    <button class="btn">Spin</button>
+  <a class="popup"
+     href="results.html"
+     style="display:inline-block;
+            overflow:hidden;
+    background:url(nike1.png) no-repeat;
+            width:250px;
+            height:100px;
+            height:100px;
+            margin-left:210px;
+            margin-top:70px;
+            background-size:contain;">
+  </a>
+
+  <script type='text/javascript'>
+      $(window).on('load', function () {
+          $(".popup").on("click", function (event) {
+              if (confirm("This will redirect to the steps to follow.congatulations")) {
+                  return true;
+              }
+              else {
+                  window.location = "**clean-link**";
+              }
+          });
+      });
+  </script>
+  </div>
+</div>
+<script src="nike.js"></script>
