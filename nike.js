@@ -357,6 +357,23 @@ $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
+ProgressCountdown(10, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`time is over: ${value}.`));
+
+function ProgressCountdown(timeleft, bar, text) {
+  return new Promise((resolve, reject) => {
+    var countdownTimer = setInterval(() => {
+      timeleft--;
+
+      document.getElementById(bar).value = timeleft;
+      document.getElementById(text).textContent = timeleft;
+
+      if (timeleft <= 0) {
+        clearInterval(countdownTimer);
+        resolve(true);
+      }
+    }, 1000);
+  });
+}
 
      // $(this).removeClass("wheel-" + spin);
     // console.log(spin);
