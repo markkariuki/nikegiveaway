@@ -643,7 +643,13 @@ body {
   justify-content: center;
   font-size: 48px;
 }
-
+#leftbox {
+                background:white;
+                margin-bottom: 20px;
+                width:105%;
+                height:180px;
+                float: none;
+            }
 
 
 
